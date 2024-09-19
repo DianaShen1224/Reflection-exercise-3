@@ -9,7 +9,7 @@ This repo provides students with a foundation for their own projects associated 
 
 The repo is structured as:
 
--   `data/raw_data` contains the raw data as obtained from X.
+-   `data/raw_data/Marriage` contains the raw data as obtained from Open Toronto Data.
 -   `data/analysis_data` contains the cleaned dataset that was constructed.
 -   `model` contains fitted models. 
 -   `other` contains relevant literature, details about LLM chat interactions, and sketches.

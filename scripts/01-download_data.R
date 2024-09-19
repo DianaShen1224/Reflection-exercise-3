@@ -9,18 +9,30 @@
 
 
 #### Workspace setup ####
+library(knitr)
+library(janitor)
+library(lubridate)
 library(opendatatoronto)
 library(tidyverse)
-# [...UPDATE THIS...]
 
 #### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
-
-
-
+library(opendatatoronto)
+library(dplyr)
+toronto_marriage <-
+  # Each package is associated with a unique id  found in the "For 
+  # Developers" tab of the relevant page from Open Data Toronto
+  # https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/
+  list_package_resources("e28bc818-43d5-43f7-b5d9-bdfb4eda5feb") |>
+  # Within that package, we are interested in the 2021 dataset
+  filter(name == 
+           "Marriage Licence Statistics Data.csv") |>
+  # Having reduced the dataset to one row we can get the resource
+  get_resource()
 #### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
+write_csv(
+  x = toronto_marriage,
+  file = "Marriage.csv"
+)
 
+head(toronto_marriage)
          
