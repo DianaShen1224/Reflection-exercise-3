@@ -48,6 +48,7 @@ analysis_data |>
   scale_color_brewer(palette = "Set1")+
   theme(legend.position = "bottom")
 ```
+
 \newpage
 
 # References
