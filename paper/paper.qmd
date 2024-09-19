@@ -35,6 +35,8 @@ Our data conduct analysis of the location of marriage from 2011 to 2024 in Toron
 #| label: fig-location
 #| fig-cap: Location of Marriage
 #| echo: false
+#| message: false
+#| warning: false
 analysis_data |>
   group_by(year,civic_centre) |>
   summarize(total_marriage_licenses = sum(marriage_licenses))|>
