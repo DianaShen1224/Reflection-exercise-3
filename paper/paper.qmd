@@ -29,7 +29,7 @@ The remainder of this paper is structured as follows. @sec-data....
 
 # Data {#sec-data}
 
-Our data conduct analysis of the location of marriage from 2011 to 2024 in Toronto @fig-location. We can see that city of Toronto has the highest marriage.
+Our data conduct analysis of the location of marriage from 2011 to 2024 in Toronto @fig-location,from @opendatatoronto. We can see that city of Toronto has the highest marriage.
 
 ```{r}
 #| label: fig-location
