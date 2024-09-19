@@ -1,15 +1,18 @@
 #### Preamble ####
-# Purpose: Tests... [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
-
+# Purpose: Tests for Data
+# Author: Diana Shen 
+# Date: 19 September 2024
+# Contact:diana.shen@mail.utoronto.ca 
+# Pre-requisites: None
+# Any other information needed? None
 
 #### Workspace setup ####
 library(tidyverse)
-# [...UPDATE THIS...]
 
 #### Test data ####
+data<-read_csv("data/raw_data/Marriage.csv")
+# Test for negative numbers
+data$MARRIAGE_LICENSES|>min()<=0
+
+#Test for NAs
+is.na(data)

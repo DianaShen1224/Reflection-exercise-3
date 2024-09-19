@@ -1,11 +1,10 @@
 #### Preamble ####
-# Purpose: Downloads and saves the data from [...UPDATE THIS...]
-# Author: Rohan Alexander [...UPDATE THIS...]
-# Date: 11 February 2023 [...UPDATE THIS...]
-# Contact: rohan.alexander@utoronto.ca [...UPDATE THIS...]
-# License: MIT
-# Pre-requisites: [...UPDATE THIS...]
-# Any other information needed? [...UPDATE THIS...]
+# Purpose: Downloads and saves the data from Toronto Open Data
+# Author: Diana Shen 
+# Date: 19 September 2024
+# Contact:diana.shen@mail.utoronto.ca 
+# Pre-requisites: None
+# Any other information needed? None
 
 
 #### Workspace setup ####
@@ -31,7 +30,7 @@ toronto_marriage <-
 #### Save data ####
 write_csv(
   x = toronto_marriage,
-  file = "Marriage.csv"
+  file = "~/Reflection exercise 3/data/raw_data/Marriage.csv"
 )
 
 head(toronto_marriage)
