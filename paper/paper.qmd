@@ -23,7 +23,7 @@ analysis_data<-read.csv("~/Reflection exercise 3/data/analysis_data/analysis_dat
 
 # Introduction
 
-You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
+You can and should cross-reference sections and sub-sections. We use @citeR, @opendatatoronto and @rohan.
 
 The remainder of this paper is structured as follows. @sec-data....
 
