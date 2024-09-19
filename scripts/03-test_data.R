@@ -15,4 +15,4 @@ data<-read_csv("data/raw_data/Marriage.csv")
 data$MARRIAGE_LICENSES|>min()<=0
 
 #Test for NAs
-is.na(data)
+all(is.na(data))
