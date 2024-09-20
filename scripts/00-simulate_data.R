@@ -17,5 +17,6 @@ data<-tibble(date=as.Date(runif(n=number_of_dates,min = as.numeric(start_date),
                           origin="1970-01-01"),
              number_of_marriage=rpois(n=number_of_dates,lambda = 15))
 
-data
+#### Write_csv
+write_csv(data, file = "data/raw_data/simulated.csv")
 
